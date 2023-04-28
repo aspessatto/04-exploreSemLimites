@@ -1,0 +1,260 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.page {
+  max-width: 43rem;
+  margin: 0 auto;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Mulish', sans-serif;
+}
+
+header {
+  text-align: center;
+  height: 68rem;
+}
+
+header p {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin: 0.5rem 0 3.5rem;
+}
+
+header img {
+  width: 36.4rem;
+  height: 37rem;
+  margin-bottom: 2rem;
+}
+
+#astronaut {
+  animation: topdown 500ms;
+}
+
+#arrow {
+  width: 5.9rem;
+  height: 10.5rem;
+}
+
+h1, h2, legend {
+  color: #B52184;
+}
+
+#planets {
+  background: rgb(52,49,147);
+  background: linear-gradient(90deg, rgba(52,49,147,1) 100%, rgba(48,44,99,1) 100%);
+  padding: 5.2rem 4rem;
+  width: 100%;
+}
+
+.cards {
+  display: grid;
+  gap: 5rem;
+}
+
+.card {
+  background-color: #FFFFFF;
+  padding: 2.7rem;
+  border-radius: 2rem;
+}
+
+.card img {
+  margin-bottom: 3rem;
+}
+
+.card h2 {
+  margin-bottom: 2rem;
+}
+
+.card p {
+  line-height: 2rem;
+  width: 26.5rem;
+}
+
+form {
+padding: 0 4rem;
+}
+
+fieldset {
+  border: none;
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+form legend {
+  font-size: 3.2rem;
+  font-weight: 900;
+  margin-bottom: 4rem;
+}
+
+.input-wrapper {
+  display: flex;
+}
+
+.input-wrapper input {
+  font-family: 'Mulish', sans-serif;
+  border-radius: 0.8rem;
+  border: 1.5px solid black;
+  height: 5rem;
+  width: 100%;
+  padding: 0 24px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.input-wrapper textarea {
+  font-family: 'Mulish', sans-serif;
+  height: 10rem;
+  border-radius: 0.8rem;
+  border: 1.5px solid black;
+  height: 15rem;
+  width: 100%;
+  padding: 0 24px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+button {
+  width: 15rem;
+  height: 5rem;
+  border-radius: 1.6rem;
+  border: none;
+  font-size: 1.4rem;
+  font-family: 'Mulish', sans-serif;
+  padding: 1rem 1.6rem;
+
+  background: linear-gradient(90deg, rgba(52,49,147,1) 100%, rgba(48,44,99,1) 100%);
+  color: #FFFFFF;
+
+  margin-bottom: 6.5rem;
+}
+
+#bg-contact {
+  display: none;
+}
+
+footer {
+  height: 8rem;
+  width: 100wh;
+  background: linear-gradient(90deg, rgba(52,49,147,1) 100%, rgba(48,44,99,1) 100%);
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*DESKTOP*/
+@media (min-width: 1200px) {
+  .page {
+    max-width: 200rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 84rem;
+    text-align: start;
+  }
+
+#astronaut {
+  height: 73rem;
+  width:71rem;
+  margin: 0 3rem;
+}
+
+.headertext {
+  margin: 0 11rem;
+  width: 100rem;
+}
+
+.headertext h1 {
+  font-size: 6rem;
+  margin-top: 31rem;
+}
+
+.headertext p {
+  font-size: 3.2rem;
+}
+
+#arrow {
+  margin-top: 18rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  width: 37rem;
+  height: 45rem;
+  margin:3rem 0;
+  transition: all 200ms;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h2 {
+  font-size: 3.5rem;
+}
+
+.card p {
+  width: 31rem;
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+}
+
+fieldset legend {
+  font-size: 4.2rem;
+}
+
+fieldset {
+  width: 80rem;
+  margin-left: 10rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background: #23207f;
+}
+
+#bg-contact {
+  display: block;
+}
+}
